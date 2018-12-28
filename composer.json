@@ -1,0 +1,32 @@
+{
+    "name": "sumanta-ghosh/laravel-devland",
+    "description": "Generate PDF document in Laravel framework with this mPDF wrapper.",
+    "keywords": ["mpdf", "pdf", "laravel", "php", "php mpdf", "laravel pdf"],
+    "authors": [{
+            "name": "Sumanta Kumar Ghosh"
+        }],
+    "license": "MIT",
+    "scripts": {
+        "test": "phpunit --colors=always"
+    },
+    "require": {
+        "php": ">=5.6"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skg\\Devland\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Skg\\Devland\\Test\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Skg\\Devland\\DevlandServiceProvider"
+            ]
+        }
+    }
+}
